@@ -15,4 +15,4 @@ jobs:
           name: "Create Infrastructure Using CloudFormation"
           command: | 
             aws cloudformation deploy \
-            --template-file template.yml --stack-name Minha_Stack
+            --template-file template.yml --stack-name Minha-Stack
