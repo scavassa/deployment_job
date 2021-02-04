@@ -24,10 +24,7 @@ jobs:
           command: | 
             aws cloudformation deploy \
             --template-file template.yml --stack-name Minha-Stack-${CIRCLE_WORKFLOW_ID}
-      - run: 
-          name: simulate error
-          command: |
-            return 1
+      - run: return 1
       - when: 
           condition: on_fail
           steps:
