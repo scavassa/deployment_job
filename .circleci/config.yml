@@ -14,5 +14,5 @@ jobs:
       - run:
           name: "Create Infrastructure Using CloudFormation"
           command: | 
-          aws cloudformation deploy \
+            aws cloudformation deploy \
             --template-file template.yml --stack-name Minha_Stack
