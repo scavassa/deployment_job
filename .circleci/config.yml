@@ -28,6 +28,8 @@ jobs:
           name: simulate error
           command: |
             return 1
-      - when: on_fail
-        - destroy_environment
+      - when: 
+          condition: on_fail
+          steps:
+            - destroy_environment
         
